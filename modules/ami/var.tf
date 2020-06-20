@@ -19,7 +19,8 @@ variable "instance_type" {
 
 variable "sg" {
 	description = "security groups attach with the instance"
-	default		= ["launch-wizard-2"]
+	type 		= "list"
+	default		= []
 }
 
 variable "key" {
