@@ -3,12 +3,12 @@ variable "profile" {
 }
 
 variable "region" {
-	description = "which aws region will be used by terraform"
+	description = "aws region will be used by terraform"
 	default		= "ap-south-1"
 }
 
 variable "ami_id" {
-	description = "which ami will be used to launch the instance"
+	description = "ami will be used to launch the instance"
 	default		= "ami-0a74bfeb190bd404f"
 }
 
