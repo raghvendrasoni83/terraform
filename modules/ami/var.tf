@@ -9,6 +9,8 @@ variable "region" {
 
 variable "ami_id" {
 	description = "ami will be used to launch the instance"
+	condition	= substr(var.ami_id, 0, 4) == "ami-"
+	error_message = "The image_id value must be a valid AMI id, starting with \"ami-\"."
 	default		= "ami-0a74bfeb190bd404f"
 }
 

@@ -1,3 +1,9 @@
+terraform {
+	required_providers {
+	  aws = "~> 2.67"
+	}
+}
+
 module "my_ami" {
 	source 		  	 = "../../../modules/ami/"
 	profile			 = "alibi"
