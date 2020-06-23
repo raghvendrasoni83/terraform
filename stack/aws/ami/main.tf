@@ -21,5 +21,5 @@ module "my_ami" {
 	user 			 = "ec2-user"
 	private_key_path 	 = "/Users/raghvendrasoni/Desktop/practice/terraform/keys/id_rsa"
 	ssh_config_loc   	 = "/Users/raghvendrasoni/Desktop/practice/terraform/keys/config"
-	ami_name		 = "http-server"
+	ami_name		 = "myami"
 }
