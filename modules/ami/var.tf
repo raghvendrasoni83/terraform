@@ -22,7 +22,7 @@ variable "instance_type" {
 variable "sg" {
 	description = "security groups attach with the instance"
 	type 		= list
-	default		= ["${data.data.aws_security_group.instance-sg.id}"]
+	//default		= ["${data.aws_security_group.instance-sg.id}"]
 }
 
 variable "key" {
@@ -78,9 +78,11 @@ variable "purpose_tag" {
 variable "sg_env" {
 	description = "get sgs which has env tag"
 	default 	= "common"
+	//type 		= string
 }
 
-variable "sg_Name" {
+variable "sg_name" {
 	description = "get sgs which has Name tag"
 	default 	= "universal"
+	//type 		= string
 }

@@ -8,7 +8,7 @@ provider "aws"{
 resource "aws_instance" "ami_bin" {
   ami = var.ami_id
   instance_type = var.instance_type
-  security_groups = var.sg
+  security_groups = ["${data.aws_security_group.instance-sg.id}"]
   key_name = var.key
 
   tags = {
